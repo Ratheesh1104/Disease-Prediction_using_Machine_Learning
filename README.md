@@ -33,7 +33,7 @@ A Streamlit-based web application that predicts the likelihood of **Diabetes**, 
 
 1. **Clone the repository**
    ```bash
-   git clone <repo-url>
+   git clone <https://github.com/Ratheesh1104/Disease-Prediction_using_Machine_Learning.git>
    cd "Disease Prediction"
    ```
 
