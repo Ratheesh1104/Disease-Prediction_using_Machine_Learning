@@ -1,5 +1,5 @@
 import os
-import pickle
+import joblib
 import streamlit as st
 from streamlit_option_menu import option_menu
 
@@ -12,11 +12,11 @@ st.set_page_config(page_title='Health Assistant',
 working_dir = os.path.dirname(os.path.abspath(__file__))
 
 # load the model
-diabetes_model = pickle.load(open(f'{working_dir}/models/diabetes_model.sav', 'rb'))
+diabetes_model = pickle.load(open(f'{working_dir}/models/diabetes_model.pkl', 'rb'))
 
-heart_model = pickle.load(open(f'{working_dir}/models/heart_model.sav', 'rb'))
+heart_model = pickle.load(open(f'{working_dir}/models/heart_model.pkl', 'rb'))
 
-parkinsons_model = pickle.load(open(f'{working_dir}/models/parkinsons_model.sav', 'rb'))
+parkinsons_model = pickle.load(open(f'{working_dir}/models/parkinsons_model.pkl', 'rb'))
 
 # sidebar for navigation
 with st.sidebar:
