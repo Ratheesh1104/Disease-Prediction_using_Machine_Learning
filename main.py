@@ -12,11 +12,11 @@ st.set_page_config(page_title='Health Assistant',
 working_dir = os.path.dirname(os.path.abspath(__file__))
 
 # load the model
-diabetes_model = pickle.load(open(f'{working_dir}/models/diabetes_model.pkl', 'rb'))
+diabetes_model = joblib.load(open(f'{working_dir}/models/diabetes_model.pkl', 'rb'))
 
-heart_model = pickle.load(open(f'{working_dir}/models/heart_model.pkl', 'rb'))
+heart_model = joblib.load(open(f'{working_dir}/models/heart_model.pkl', 'rb'))
 
-parkinsons_model = pickle.load(open(f'{working_dir}/models/parkinsons_model.pkl', 'rb'))
+parkinsons_model = joblib.load(open(f'{working_dir}/models/parkinsons_model.pkl', 'rb'))
 
 # sidebar for navigation
 with st.sidebar:
